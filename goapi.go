@@ -8,7 +8,7 @@ import (
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Access-Control-Allow-Origin", "*")
-		fmt.Fprintf(w, "Hello, world")
+		fmt.Fprintf(w, "Hello, world Go!")
 	})
 
 	http.ListenAndServe(":8081", nil)
